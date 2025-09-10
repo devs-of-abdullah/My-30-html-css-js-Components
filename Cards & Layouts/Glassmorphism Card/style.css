@@ -1,0 +1,77 @@
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #5767eb, #8f7fff);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+
+.card {
+    width: 500px;
+    height: 300px;    
+    border: 1px solid rgba(255,255,255,0.3);
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    justify-content: flex-start;
+    padding: 20px;
+    background: rgba(255,255,255,0.1); 
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    opacity: 0.8;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+
+.card-logo {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.card-chip {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.card-number {
+    
+    text-align: center;
+    margin: 20px 0;
+    letter-spacing: 3px;
+}
+.card-details{
+    display: flex;
+    flex-direction: row;
+    gap: 10px; 
+font-size: large;
+}
+
+.card-details-item-label{
+    font-size:x-small;
+    
+}
+
+svg {
+    width: 100px;
+height: 80px;
+    fill: white;
+}
+@media (max-width:600px) {
+    .card{
+        width: 80%;
+        height: 35%;
+        font-size: x-large;
+    }
+    svg{
+        height: 60px;
+    }
+    
+   
+}
