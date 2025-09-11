@@ -8,19 +8,26 @@ align-items: center;
     display: flex;
     justify-content: center;
       color: #C4F1BE;
+    
 }
 
 .socialaccountsicon:hover{
     transform: scale(1.1);
 
 } 
+.backbutton{
+    position: sticky;
+   bottom: 100%;
+   
 
+}
 svg{
    width: 32px; 
    height:32px;
    fill: #C4F1BE;
 
 }
+
 a{
     color:#C4F1BE;
     font-weight: bold;
@@ -65,18 +72,4 @@ button{
     transform: scale(1.05);
 }
 
-#customalert {
-  display: none; /* hidden by default */
-  position: fixed;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #f44336; /* red background */
-  color: white;
-  padding: 15px 25px;
-  border-radius: 8px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-  font-size: 16px;
-  z-index: 1000;
-}
 
