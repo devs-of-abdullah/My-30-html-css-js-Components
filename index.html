@@ -3,106 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>main page</title>
-    <style>
-        body{
-    background: darksalmon;
-    
-}
-.cls-body-categories{
-    display: flex;
-    flex-direction: column;
-}
-.cls-category{
-    border: 4px solid;
-    border-radius: 12px;
-    margin: 10px;
-    padding: 10px;
-
-}
-.cls-category-item{
-    text-decoration: none;
-    padding: 10px;
-    margin: 10px;
-    border: 4px solid;
-    color: black;
-    border-radius: 12px;
-    background: darkolivegreen;
-    text-align: center;
-    font-weight:bold;
-    font-size: large;
-}
-.cls-category-item:hover{
-    transform: scale(1.1);
-    transition-duration: 0.5s;
-}
-.cls-category-items{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 10px;
-    gap:10px;
-}
-.cls-category-name{
-display: flex;
-justify-content: center;
-font-weight: 700;
-}    
-.cls-body-header{
-    font-size:xx-large;
-    text-align: center;
-    text-wrap: nowrap;
-}
-.cls-body-footer{
-    text-align: center;
-    border-top: 2px solid;
-}
-.cls-body-description{
-    text-align: center;
-}
-
-@media (max-width:1000px) {
-.cls-category-items{
-    grid-template-columns: 1fr 1fr;
-}
-}
-@media (max-width:500px) {
-.cls-category-items{
-    grid-template-columns: 1fr;
-}
-}
-    </style>
+    <title>main</title>
+    <link rel="stylesheet" href="./Main/main.css">
 </head>
 <body>
     <h1 class="cls-body-header">Advanced 30 UI</h1>
         <p class="cls-body-description">Components are grouped by category/folder.  <br>Click a button to open the demo.</p>
         <p class="cls-body-description">Built with HTML, CSS, and JavaScript.</p>
-
     <div class="cls-body-categories">
-        
     <section class="cls-category">
         <h2 class="cls-category-name">Cards & Layouts</h2>
         <div class="cls-category-items">
-             <a href="./Cards & Layouts/Glassmorphism Card/index.html" target="_self" class="cls-category-item">Glassmorphism Card</a>
-               
+             <a href="./Cards & Layouts/Glassmorphism Card/index.html" target="_self" class="cls-category-item">Glassmorphism Card</a>            
         </div>
     </section>
-
     <section class="cls-category">
          <h2 class="cls-category-name">Menus & Navigation</h2>
            <div class="cls-category-items">
         </div>
     </section>
-
     <section class="cls-category">
         <h2 class="cls-category-name">Forms & Input</h2>
              <div class="cls-category-items">
+                 <a href="./Form & Input/Login & Signup/loginAndSignupForm.html" target="_self" class="cls-category-item">Animated Login and Signup Form</a>            
             </div>
     </section>
-    
     <section class="cls-category">
         <h2 class="cls-category-name">Media & Misc</h2>
           <div class="cls-category-items">
-  
         </div>
     </section>
     </div>

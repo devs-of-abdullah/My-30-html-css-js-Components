@@ -30,21 +30,21 @@ body {
 
 .card-logo {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end;  
 }
 
 
 .card-chip {
     display: flex;
     justify-content: flex-start;
+    margin: 0;
 
 }
 
 .card-number {
-    
     text-align: center;
-    margin: 20px 0;
     letter-spacing: 3px;
+    text-wrap: nowrap;
 }
 .card-details{
     display: flex;
@@ -56,6 +56,12 @@ font-size: large;
 .card-details-item-label{
     font-size:x-small;
     
+}
+.backbutton{
+    position: absolute;
+   top: 10%;
+   left: 5%;
+
 }
 
 svg {
@@ -74,4 +80,17 @@ height: 80px;
     }
     
    
+}
+@media (max-width:450px){
+    .card{
+    height: 25%;
+        font-size: medium;
+    }
+    
+    .card-details{
+     font-size: small;
+    }
+    .card-logo{
+        height: 30px;
+    }
 }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & Signup</title>
+  <link rel="stylesheet" href="../Login & Signup/LoginSignupForm.css">
+  <script src="../Login & Signup/LoginSignupForm.js" defer></script>
+</head>
+<body>
+  <section class="card">
+    <main>
+      <form id="login-form" action="/submit-login" method="post">
+
+        <fieldset>
+          <legend>Login</legend>
+          <label for="login-email">Email</label><br>
+          <input type="email" id="login-email" name="email" placeholder="Enter Email" required>
+          <br><br>
+          <label for="login-password">Password</label><br>
+          <input type="password" id="login-password" name="password" placeholder="Enter Password" required>
+          <br><br>
+          <button id="btnlogin" type="submit">Log In</button>
+          
+          <p>Don't have an account? <a href="#" id="switch-to-signup">Sign Up</a></p>
+          <p>Log in with:</p>
+           <section class="socialaccounts">
+                    <a href="#" title="Github"><svg> <use href="../Login & Signup/icons/github-142-svgrepo-com.svg"></use></svg></a>
+        <a href="#" title="Google"><svg> <use href="../Login & Signup/icons/google-178-svgrepo-com.svg"></use></svg></a>
+        <a href="#" title="Facebook"><svg> <use href="../Login & Signup/icons/facebook-svgrepo-com.svg"></use></svg></a>
+      </section>
+        </fieldset>
+      </form>
+      <form id="signup-form" action="/submit-signup" method="post" style="display:none;">
+        <fieldset>
+          <legend>Signup</legend>
+          <label for="signup-name">Full Name</label><br>
+          <input type="text" id="signup-name" name="name" placeholder="Enter Fullname" required>
+          <br><br>
+          <label for="signup-email">Email</label><br>
+          <input type="email" id="signup-email" name="email" placeholder="Enter Email" required>
+          <br><br>
+          <label for="signup-password">Password</label><br>
+          <input type="password" id="signup-password" name="password" placeholder="Enter Password" required>
+          <br><br>
+          <button id="btnsignin" type="submit">Sign Up</button>
+          <p>Already have an account? <a href="#" id="switch-to-login">Log In</a></p>
+          <p>Sign up with:</p>
+           <section class="socialaccounts">
+        <a href="#" title="Github"><svg> <use href="../Login & Signup/icons/github-142-svgrepo-com.svg"></use></svg></a>
+        <a href="#" title="Google"><svg> <use href="../Login & Signup/icons/google-178-svgrepo-com.svg"></use></svg></a>
+        <a href="#" title="Facebook"><svg> <use href="../Login & Signup/icons/facebook-svgrepo-com.svg"></use></svg></a>
+      </section>
+        </fieldset>
+      </form>
+     
+    </main>
+
+  </section>
+</body>
+</html>
