@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: wheat;
+    color: #E5D5D2;
+}
+.cards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+   
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border:2px solid#E5D5D2;
+    border-radius: 16px;
+    background: #433938;
+    margin: 30px;
+      box-shadow: 0 4px 50px rgba(0, 0, 10, 1);
+
+
+}
+.card-description{
+    font-size: larger;
+    margin: 10px;
+}
+.card-name{
+    font-size: xx-large;
+}
+.card-price{
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.card-btn{
+    margin: 20px;
+    height: 30px;
+
+    font-weight: bolder;
+    font-size: larger;
+    border:1px solid #E5D5D2;
+    color: #E5D5D2;
+    border-radius: 16px;
+    background-color: #171313;
+    cursor: pointer;
+}
+.card-btn:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.card-image{
+   
+    animation: updown 3s linear infinite;
+        transition: all 0.5s;
+
+}
+@keyframes updown{
+    0%{
+         transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+   100%{
+    transform: translateY(0);
+   }
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+
+}
+.backbutton{
+    position: sticky;
+   bottom: 100%;
+   display: none;
+}
+svg{
+   width: 32px; 
+   height:32px;
+   fill: #171313;
+   margin: 10px;
+}
+@media (max-width:500px){
+.backbutton{
+    display: block;
+}
+}
