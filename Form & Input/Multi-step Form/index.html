@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Step Form</title>
+    <link rel="stylesheet" href="../Multi-step Form/style.css">
+    <script src="../Multi-step Form/script.js" defer></script>
+</head>
+<body>
+ <a class="backbutton" href="/index.html" title="Go Back"> 
+        <svg><use href="/Main/icons/back.svg"></use></svg>
+    </a>
+    <main>
+        <h2>Book an appointment</h2>
+        <form id="AppointmentForm" action="/submitFullForm" method="post">
+            <section class="GeneralForm">
+                <fieldset>
+                    <legend>General</legend>
+                    <label for="fullname">Fullname</label><br>
+                    <input type="text" id="fullname" name="Fullname" required placeholder="Enter Fullname"><br>
+                    <label for="birthdate">Birth Date</label><br>
+                    <input type="date" name="birthdate" id="birthdate" required>
+                    <br>
+                    <label for="email">Email</label> <br>   
+                    <input type="email" name="email" id="email" required>
+                     Gender <br>
+                    <div class="gender">
+                        <label for="genderMale">Male</label>
+                        <input type="radio" name="gender" id="genderMale" required value="Male">
+                        <label for="genderFemale">Female</label>
+                        <input type="radio" name="gender" id="genderFemale" required value="Female">
+                    </div>
+                    <br>
+                    <br>
+                    <button type="button" id="btnNextToService">Next</button>
+                </fieldset>
+            </section>
+            <section class="ServiceForm">
+                <fieldset>
+                    <legend>Service</legend>
+                
+                    <label for="SingleTrip">Single Trip</label>
+                    <input type="radio" name="Trip" id="SingleTrip" required value="Single Trip">
+                   
+                    <label for="CoupleTrip">Couple Trip</label>
+                    <input type="radio" name="Trip" id="CoupleTrip" required value="Couple Trip"> 
+                    <label for="FamilyTrip">Family Trip</label>
+                    <input type="radio" name="Trip" id="FamilyTrip" required value="Family Trip"> 
+                    <button type="button" id="btnBackToGeneral">Back</button>
+                    <button type="button" id="btnNextToConfirm">Next</button>
+                </fieldset>
+            </section>
+            <section class="ConfirmForm">
+                <fieldset>
+                    <legend>Confirmation</legend>
+                    <div class="confirmSection">
+                        <p class="confirmPLabel">Fullname:</p>
+                        <p class="confirmPValue" id="FullnameValue"></p>
+                    </div>
+                    <div class="confirmSection">
+                        <p class="confirmPLabel">Email:</p>
+                        <p class="confirmPValue" id="EmailValue"></p>
+                    </div>
+                    <div class="confirmSection">
+                        <p class="confirmPLabel">Birth Date:</p>
+                        <p class="confirmPValue" id="BirthDateValue"></p>
+                    </div>
+                    <div class="confirmSection">
+                        <p class="confirmPLabel">Gender:</p>
+                        <p class="confirmPValue" id="GenderValue"></p>
+                    </div>
+                    <div class="confirmSection">
+                        <p class="confirmPLabel">Service:</p>
+                        <p class="confirmPValue" id="ServiceValue"></p>
+                    </div>
+                    <button type="button" id="btnBackToService">Back</button>
+                    <button type="submit" id="btnConfirm">Confirm</button>
+                </fieldset>
+            </section>
+
+        </form>
+    </main>
+</body>
+</html>
