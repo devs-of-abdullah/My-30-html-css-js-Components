@@ -18,14 +18,12 @@ align-items: center;
 .backbutton{
     position: sticky;
    bottom: 100%;
-   
-
+   display: none;
 }
 svg{
    width: 32px; 
    height:32px;
    fill: #C4F1BE;
-
 }
 
 a{
@@ -72,4 +70,8 @@ button{
     transform: scale(1.05);
 }
 
-
+@media (max-width:500px){
+.backbutton{
+    display: block;
+}
+}

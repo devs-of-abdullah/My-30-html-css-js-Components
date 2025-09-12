@@ -57,17 +57,30 @@ font-size: large;
     font-size:x-small;
     
 }
+
 .backbutton{
     position: absolute;
-   top: 10%;
-   left: 5%;
+    top: 60px;
+    left: 20px;
+   display: none;
+}
+svg{
+     width: 100px;
+    height: 80px;
+    fill: white;
+  
+}
+@media (max-width:500px){
+.backbutton{
+    display: block;
+    
+}
+a svg{
+    width: 32px;
+    height: 32px;
 
 }
 
-svg {
-    width: 100px;
-height: 80px;
-    fill: white;
 }
 @media (max-width:600px) {
     .card{
@@ -75,9 +88,7 @@ height: 80px;
         height: 35%;
         font-size: x-large;
     }
-    svg{
-        height: 60px;
-    }
+  
     
    
 }
