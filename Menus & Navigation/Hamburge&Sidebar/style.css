@@ -1,0 +1,59 @@
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+#menuBtn{
+    position: fixed;
+    right: 5px;
+    z-index: 2;
+    background:none;
+    font-size: xx-large;
+    border: none;
+    
+    
+}
+.backbutton{
+    position:absolute;
+  left: 20px;
+  top: 10px;
+   display: none;
+}
+svg{
+   width: 32px; 
+   height:32px;
+   fill: #333;
+   margin: 10px;
+}
+@media (max-width:500px){
+.backbutton{
+    display: block;
+}
+}
+    #sidebar {
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  background: #222;
+  color: white;
+  transform: translateX(100%);
+  transition: 0.3s;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  font-size: xx-large;
+  
+}
+
+#sidebar.active {
+  transform: translateX(0);
+}
+.sidebaritem:hover{
+cursor: pointer;
+border-bottom: 1px solid white;
+}
